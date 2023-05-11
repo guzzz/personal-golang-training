@@ -37,7 +37,7 @@ func (user *User) validate(create bool) error {
 	}
 
 	if user.Password == "" && create {
-		return errors.New("A senha é obrigatória.")
+		return errors.New("a senha é obrigatória")
 	}
 
 	return nil
