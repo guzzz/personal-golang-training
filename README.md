@@ -61,7 +61,14 @@ TODO
 
 ## Testes
 
-TODO
+<em>
+    Inicialmente feito dentro de models para fins de aprendizado
+</em>
+
+1. go test -v
+2. go test --coverprofile cobertura.txt
+3. go tool cover --func=cobertura.txt 
+4. go tool cover --html=cobertura.txt
 
 ---
 

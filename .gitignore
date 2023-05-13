@@ -32,4 +32,4 @@ go.work
 .env
 
 # SQL files
-api/sql
+api/sql/
