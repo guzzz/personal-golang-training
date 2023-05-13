@@ -37,7 +37,7 @@ func CreateUser(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if erro = user.Hash_passowrd(); erro != nil {
+	if erro = user.HashPassowrd(); erro != nil {
 		responses.Error(w, http.StatusInternalServerError, erro)
 		return
 	}
@@ -389,7 +389,7 @@ func UpdatePassword(w http.ResponseWriter, r *http.Request) {
 	}
 
 	user.Password = passwordForm.NewOne
-	if erro = user.Hash_passowrd(); erro != nil {
+	if erro = user.HashPassowrd(); erro != nil {
 		responses.Error(w, http.StatusInternalServerError, erro)
 		return
 	}

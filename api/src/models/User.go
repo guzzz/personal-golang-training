@@ -62,8 +62,8 @@ func (user *User) format() {
 	user.Email = strings.TrimSpace(user.Email)
 }
 
-// Hash_passowrd vai chamar metodos de hash de biblioteca terceira
-func (user *User) Hash_passowrd() error {
+// HashPassowrd vai chamar metodos de hash de biblioteca terceira
+func (user *User) HashPassowrd() error {
 	var erro error = nil
 	user.Password, erro = security.Hash(user.Password)
 	if erro != nil {
